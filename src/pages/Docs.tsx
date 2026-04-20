@@ -38,12 +38,6 @@ const typeIcons: Record<DocEntry['type'], React.ElementType> = {
   'incident-report': Scale,
 }
 
-const typeLabels: Record<DocEntry['type'], string> = {
-  'annex-iv': 'Technical Documentation',
-  'risk-assessment': 'Risk Assessment',
-  'monitoring-plan': 'Monitoring Plan',
-  'incident-report': 'Incident Report',
-}
 
 const statusStyles: Record<DocEntry['status'], { label: string; className: string }> = {
   current: { label: 'Current', className: 'bg-risk-green/15 text-risk-green border-risk-green/30' },

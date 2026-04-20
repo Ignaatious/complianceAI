@@ -12,7 +12,7 @@ import { useRole } from '@/context/RoleContext'
 import type { ChecklistCategory, SystemTab } from '@/types'
 import {
   ClipboardList, Activity, FileText, Eye, Clock,
-  Download, Copy, Users, Zap, TrendingUp, AlertTriangle, Lock
+  Download, Copy, Users, Zap, TrendingUp, AlertTriangle
 } from 'lucide-react'
 import {
   ResponsiveContainer, RadialBarChart, RadialBar,

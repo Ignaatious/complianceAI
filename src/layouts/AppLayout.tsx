@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import { Sidebar } from './Sidebar'
 import { RoleToggle } from '@/components/RoleToggle'
-import { Menu, X } from 'lucide-react'
+import { Menu } from 'lucide-react'
 
 export function AppLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false)

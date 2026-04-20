@@ -4,15 +4,15 @@ import { Badge } from '@/components/Badge'
 import { ConnectRepoModal } from '@/components/ConnectRepoModal'
 import { useRole } from '@/context/RoleContext'
 import {
-  Github, GitBranch, Unplug, RefreshCw, Check, Shield,
-  Bell, Key, Users, ExternalLink, Lock, Globe, Trash2
+  Github, Unplug, RefreshCw, Check,
+  Bell, Users, ExternalLink, Lock, Globe, Trash2
 } from 'lucide-react'
 
 export function Settings() {
   const { github, disconnectGitHub, updateGitHubSettings } = useRole()
   const [modalOpen, setModalOpen] = useState(false)
   const [showDisconnectConfirm, setShowDisconnectConfirm] = useState(false)
-  const [webhookSecret, setWebhookSecret] = useState('whsec_xxxxxxxxxxxxxxxxxxxxxxxx')
+  const [webhookSecret, _setWebhookSecret] = useState('whsec_xxxxxxxxxxxxxxxxxxxxxxxx')
   const [showSecret, setShowSecret] = useState(false)
 
   const selectedRepo = github.repos.find(r => r.id === github.selectedRepoId)

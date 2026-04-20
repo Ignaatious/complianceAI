@@ -6,7 +6,6 @@ import { CountdownTimer } from '@/components/CountdownTimer'
 import { AlertCard } from '@/components/AlertCard'
 import { Badge } from '@/components/Badge'
 import { Card } from '@/components/Card'
-import { useCountdown } from '@/hooks/useCountdown'
 import { mockSystems } from '@/data/mockSystems'
 import { mockAlerts, mockNextActions } from '@/data/mockAlerts'
 import { useNavigate } from 'react-router-dom'
@@ -22,7 +21,6 @@ const item = {
 }
 
 export function Dashboard() {
-  const { totalDays } = useCountdown()
   const navigate = useNavigate()
   const totalSystems = mockSystems.length
   const highRiskCount = mockSystems.filter(s => s.riskLevel === 'HIGH').length

@@ -16,7 +16,7 @@ export function ConnectRepoModal({ open, onClose }: ConnectRepoModalProps) {
   const [repoSearch, setRepoSearch] = useState('')
   const [scanProgress, setScanProgress] = useState(0)
 
-  const handleConnect = (provider: 'github' | 'gitlab') => {
+  const handleConnect = (_provider: 'github' | 'gitlab') => {
     // Simulate OAuth flow
     connectGitHub()
     setStep('select-repo')
