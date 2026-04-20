@@ -10,6 +10,6 @@ export default defineConfig({
     },
   },
   preview: {
-    allowedHosts: 'all',
+    allowedHosts: ['complianceai-production-6a72.up.railway.app'],
   },
 })
